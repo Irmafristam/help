@@ -138,7 +138,7 @@ export function create_player(player_num: number, player_name: string): string {
 export function intro(categories: Subject_options, username: Name): Function | void {
     console.log("Lets go", username)
     points = 0
-    return begin_game(categories)
+    begin_game(categories)
 }
 
 /**
@@ -246,7 +246,7 @@ export function upd_leaderboard(leaderboard: Leaderboard, categories: Subject_op
     //return new_round(categories)
 }
 
-export function new_round(categories: Subject_options): Function | void {
+/*export function new_round(categories: Subject_options): Function | void {
     categories = []
     categories.push(pair(all_subjects[0].key, all_subjects[0].subject), pair(all_subjects[1].key, all_subjects[1].subject), 
                       pair(all_subjects[2].key, all_subjects[2].subject), pair(all_subjects[3].key, all_subjects[3].subject), 
@@ -261,5 +261,6 @@ export function new_round(categories: Subject_options): Function | void {
         }
 }
 
+*/
 
-//console.log(intro(subjects_opt, input()))
+console.log(intro(subjects_opt, input()))
